@@ -1,0 +1,180 @@
+/* Text primary */
+.text-primary {
+  color: rgb(247, 14, 14);
+}
+.text-secondary {
+  color: rgb(7, 7, 60);
+}
+
+/* Section header */
+.section-header {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  /* align-items needs a specified container height to align items to */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  margin: 20px 0;
+  font-size: 40px;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/* FLex grid to show grid of images 4 x 4*/
+/* .flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+} */
+/* flex is shorthand for grow, shrink & basis(size in px or %)  */
+.flex-grid .column {
+  flex: 24%;
+  max-width: 25%;
+  margin: 4px;
+}
+
+/* Button */
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 30px;
+  color: white;
+  background-color: rgb(255, 196, 0);
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-primary,
+.bg-primary {
+  background: blue;
+  color: white;
+}
+.btn-secondary,
+.bg-secondary {
+  background: rgb(255, 196, 0);
+  color: white;
+}
+.btn-third,
+.bg-third {
+  background: rgb(2, 10, 55);
+  /* background: rgba(31, 17, 24, 1); */
+  color: white;
+}
+
+.btn-dark,
+.bg-dark {
+  background: rgb(58, 58, 150);
+  color: white;
+}
+
+.btn-light,
+.bg-light {
+  background: white;
+  color: navy;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+}
+
+/* quotes */
+blockquote {
+  font-size: 1.2rem;
+  color: red;
+  line-height: 1.8rem;
+  padding: 20px;
+  position: relative;
+}
+blockquote::before {
+  content: open-quote;
+  font-size: 2em;
+  color: red;
+}
+blockquote::after {
+  position: absolute;
+  content: close-quote;
+  font-size: 2em;
+  color: red;
+}
+
+/* Flex items */
+.flex-items {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+/* target direct div of flex-item */
+/* give width to the divs not the flex-items */
+.flex-items > div {
+  width: 33%;
+  padding: 20px;
+}
+
+.flex-items h4 {
+  padding: 20px 0;
+}
+
+/* Flex columns */
+
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+/* make 2 cols which take up entire height - the flex basis is the height of the column, and will grow/shrink to fit */
+
+/* the container for the 2 columns */
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 0 0 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* the column items will take up the whole height of this section*/
+.flex-columns .column .column1,
+.flex-columns .column .column2 {
+  height: 100%;
+}
+
+.column-1 {
+  margin: 20px;
+  padding: 20px;
+}
+
+/* resize img to fit without distortion */
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-columns h2 {
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.flex-columns h4 {
+  padding: 2rem 0;
+  margin: 50 0px;
+}
+
+.flex-columns p {
+  margin: 20px 0;
+}

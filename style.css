@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Literata", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  background: white;
+  color: rgb(2, 10, 55);
+  line-height: 1.6;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+h2.logo {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* work showcase grid  */
+.grid {
+  padding: 20px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+}
+
+img {
+  width: 100%;
+  grid-area: 1/1/2/2;
+}
+
+div.one:hover {
+  background-color: orange;
+  z-index: 100;
+}
+
+/* Navbar */
+
+.navbar.top {
+  background: transparent;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(254, 198, 15);
+
+  /* opacity: 0.8; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  padding: 0 30px;
+  height: 60px;
+  transition: 0.2s ease-out;
+}
+
+#navbar {
+  z-index: 50;
+}
+.navbar a {
+  color: white;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a:hover {
+  border-bottom: 6px solid rgb(254, 198, 15);
+}
+
+/* Header */
+.hero {
+  background: url(images/studiohero.jpg) no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  font-size: 55px;
+}
+
+.hero .content p {
+  font-size: 23px;
+  max-width: 600px;
+  margin: 20px 0;
+  color: white;
+}
+/* transparent overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 62, 224, 0.2);
+}
+/* make everything in the hero 10 so that the z-index of items in the hero is greater that the hero::before overlay  */
+.hero * {
+  z-index: 10;
+}
+
+.section-header h2 {
+  border-top: 4px solid rgb(254, 198, 15);
+  color: rgb(35, 49, 130);
+}
+
+/* contact Form */
+.contact-form {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form .form-control {
+  margin-bottom: 15px;
+}
+.contact-form input {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: white 1px solid;
+}
+
+.contact-form input[type="text"] {
+  background-color: white;
+}
+.contact-form input[type="submit" value="Send"] {
+  padding: 20px 0;
+}
+
+.contact-form input:focus {
+  outline-color: red;
+}
+.contact-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.footer a {
+  color: white;
+}
+.footer a:hover {
+  color: white;
+}
+
+/* target anything inside the social class */
+.footer .social > * {
+  margin-right: 30px;
+}
+
+.footer a:hover {
+  color: red;
+}
+
+/* Mobile */
+@media (max-width: 860px) {
+  .navbar {
+    flex-direction: column;
+    height: 80px;
+    padding: 10px;
+    z-index: 20;
+  }
+  .navbar a {
+    padding: 0 8px;
+    margin: 0 3px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+  .content > h1 {
+    margin-top: 30px;
+  }
+
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .flex-items > div {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(254, 198, 15);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0 30px;
+    height: 90px;
+    transition: 0.2s ease-out;
+  }
+}
