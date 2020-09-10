@@ -11,9 +11,11 @@ body {
   color: rgb(2, 10, 55);
   line-height: 1.6;
 }
+
 ul {
   list-style: none;
 }
+
 a {
   color: #000;
   text-decoration: none;
@@ -37,10 +39,8 @@ p {
 
 /* work showcase grid  */
 .grid {
-  padding: 20px;
-  width: 100vw;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%) 1fr));
   grid-gap: 20px;
 }
 
@@ -48,11 +48,6 @@ img {
   width: 100%;
   grid-area: 1/1/2/2;
 }
-
-/* div.one:hover {
-  background-color: orange;
-  z-index: 100;
-} */
 
 /* Navbar */
 
@@ -65,9 +60,7 @@ img {
   align-items: center;
   justify-content: space-between;
   background-color: rgb(254, 198, 15);
-
-  /* opacity: 0.8; */
-  width: 100%;f
+  width: 100%;
   position: fixed;
   top: 0;
   padding: 0 30px;
@@ -78,6 +71,7 @@ img {
 #navbar {
   z-index: 50;
 }
+
 .navbar a {
   color: white;
   padding: 10px 20px;
@@ -120,6 +114,7 @@ img {
   margin: 20px 0;
   color: white;
 }
+
 /* transparent overlay */
 .hero::before {
   content: "";
@@ -130,7 +125,7 @@ img {
   height: 100%;
   background-color: rgba(245, 62, 224, 0.2);
 }
-/* make everything in the hero 10 so that the z-index of items in the hero is greater that the hero::before overlay  */
+
 .hero * {
   z-index: 10;
 }
@@ -165,13 +160,16 @@ img {
 .contact-form input[type="text"] {
   background-color: white;
 }
-.contact-form input[type="submit" value="Send"] {
-  padding: 20px 0;
+
+.contact-form input[type="submit"],
+.contact-form input[value="Send"] {
+  padding: 8px 0;
 }
 
 .contact-form input:focus {
   outline-color: red;
 }
+
 .contact-form .btn {
   padding: 12px 0;
   margin-top: 20px;
@@ -189,6 +187,7 @@ img {
 .footer a {
   color: white;
 }
+
 .footer a:hover {
   color: white;
 }
@@ -214,6 +213,7 @@ footer > p {
     padding: 10px;
     z-index: 20;
   }
+
   .navbar a {
     padding: 0 8px;
     margin: 0 3px;
@@ -222,6 +222,7 @@ footer > p {
   .flex-items {
     flex-direction: column;
   }
+
   .content > h1 {
     margin-top: 30px;
   }
@@ -237,6 +238,7 @@ footer > p {
     width: 100%;
     text-align: center;
   }
+
   .navbar {
     display: flex;
     align-items: center;
@@ -252,28 +254,7 @@ footer > p {
 }
 
 /* overlays */
-.container .image-overlay-one {
-  position: relative;
-}
-.container .image-overlay-two {
-  position: relative;
-}
-.container .image-overlay-three {
-  position: relative;
-}
-.container .image-overlay-four {
-  position: relative;
-}
-.container .image-overlay-five {
-  position: relative;
-}
-.container .image-overlay-six {
-  position: relative;
-}
-.container .image-overlay-seven {
-  position: relative;
-}
-.container .image-overlay-eight {
+.relative {
   position: relative;
 }
 

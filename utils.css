@@ -30,19 +30,13 @@
 }
 
 /* FLex grid to show grid of images 4 x 4*/
-/* .flex-grid .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-} */
-/* flex is shorthand for grow, shrink & basis(size in px or %)  */
+
 .flex-grid .column {
   flex: 24%;
   max-width: 25%;
   margin: 4px;
 }
 
-/* Button */
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -68,7 +62,6 @@
 .btn-third,
 .bg-third {
   background: rgb(2, 10, 55);
-  /* background: rgba(31, 17, 24, 1); */
   color: white;
 }
 
@@ -117,7 +110,6 @@ blockquote::after {
 }
 
 /* target direct div of flex-item */
-/* give width to the divs not the flex-items */
 .flex-items > div {
   width: 33%;
   padding: 20px;
@@ -140,7 +132,6 @@ blockquote::after {
 }
 /* make 2 cols which take up entire height - the flex basis is the height of the column, and will grow/shrink to fit */
 
-/* the container for the 2 columns */
 .flex-columns .column {
   display: flex;
   flex-direction: column;
