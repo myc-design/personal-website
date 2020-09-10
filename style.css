@@ -40,7 +40,7 @@ p {
 /* work showcase grid  */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(25rem, 100%) 1fr));
   grid-gap: 20px;
 }
 
@@ -198,7 +198,7 @@ footer > p {
 
 /* target anything inside the social class */
 .footer .social > * {
-  margin-right: 30px;
+  margin: 10px;
 }
 
 .footer a:hover {
