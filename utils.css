@@ -5,6 +5,9 @@
 .text-secondary {
   color: rgb(7, 7, 60);
 }
+.text-highlight {
+  color: rgb(73, 44, 181);
+}
 
 /* Section header */
 .section-header {

@@ -136,7 +136,8 @@ img {
 }
 
 .section-header h2 {
-  border-top: 4px solid rgb(254, 198, 15);
+  border-top: 4px solid rgb(73, 44, 181);
+  padding-top: 20px;
   color: rgb(35, 49, 130);
 }
 
