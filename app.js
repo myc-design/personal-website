@@ -1,3 +1,5 @@
+// code snippet source from travesy media
+
 // if scroll 100 then remove the transparancy behind the nav
 
 const navbar = document.getElementById("navbar");
