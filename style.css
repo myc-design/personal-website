@@ -67,7 +67,7 @@ img {
   background-color: rgb(254, 198, 15);
 
   /* opacity: 0.8; */
-  width: 100%;
+  width: 100%;f
   position: fixed;
   top: 0;
   padding: 0 30px;
@@ -94,7 +94,7 @@ img {
 
 /* Header */
 .hero {
-  background: url(/images/studiohero.jpg) no-repeat center center/cover;
+  background: url(images/studiohero.jpg) no-repeat center center/cover;
   height: 100vh;
   position: relative;
   color: white;
@@ -193,6 +193,10 @@ img {
   color: white;
 }
 
+footer > p {
+  padding-top: 20px;
+}
+
 /* target anything inside the social class */
 .footer .social > * {
   margin-right: 30px;
@@ -248,28 +252,28 @@ img {
 }
 
 /* overlays */
-.container .one {
+.container .image-overlay-one {
   position: relative;
 }
-.container .two {
+.container .image-overlay-two {
   position: relative;
 }
-.container .three {
+.container .image-overlay-three {
   position: relative;
 }
-.container .four {
+.container .image-overlay-four {
   position: relative;
 }
-.container .five {
+.container .image-overlay-five {
   position: relative;
 }
-.container .six {
+.container .image-overlay-six {
   position: relative;
 }
-.container .seven {
+.container .image-overlay-seven {
   position: relative;
 }
-.container .eight {
+.container .image-overlay-eight {
   position: relative;
 }
 
